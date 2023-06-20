@@ -7,18 +7,18 @@ architecture monorepo. It includes microservices built on a PaaS with IaC for
 streamlined development, testing, and deployment.
 
 There are two services that are primary of concern. The first is Design System
-located in `/services/design-system`. This is used design the UI of components
+located in `/services/design-system`. This is used to design the UI of components
 in isolation. The next is the AdminClient located in `/services/admin-client`.
 This is a NextJS app that uses the UI components.
 
 ## Getting Started
 
-For a turn-key development environment, open in Github Codespaces with at least **4 Cores**. To open a new CodeSpace from Github when signed in and viewing this repo, click the below button.
+For a turn-key development environment, open in Github a Codespaces with at least **4 Cores**. To open a new CodeSpace from Github when signed in and viewing this repo, click the below button.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=656233196&skip_quickstart=true&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=UsEast)
 
 To develop for the AdminClient app using the CodeSpace, go to the admin client
-package build dependencies and run in dev mode:
+package, build dependencies, and run in dev mode:
 
 ```bash
 cd /usr/app/services/admin-client
