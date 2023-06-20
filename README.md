@@ -17,9 +17,9 @@ For a turn-key development environment,
 [fork the repo](https://github.com/aerisapp/tech-challenge/fork) and open in
 Github Codespaces with at least **4 Cores**.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=656233196&skip_quickstart=true&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=UsEast)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)]([https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=438855397](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=656233196&skip_quickstart=true&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=UsEast))
 
-From Github to open a new CodeSpace when signed in and viewing this repo, select
+To open a new CodeSpace from Github when signed in and viewing this repo, select
 the "Code" > Codespaces > +.
 
 ![Codespace](docs/codespaces.png)
