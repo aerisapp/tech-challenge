@@ -13,8 +13,7 @@ This is a NextJS app that uses the UI components.
 
 ## Getting Started
 
-For a turn-key development environment, open in Github Codespaces with at least **4 Cores**. To open a new CodeSpace from Github when signed in and viewing this repo, click the below button. Alternatively, select
-the "Code" > Codespaces > +.
+For a turn-key development environment, open in Github Codespaces with at least **4 Cores**. To open a new CodeSpace from Github when signed in and viewing this repo, click the below button.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=656233196&skip_quickstart=true&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=UsEast)
 
