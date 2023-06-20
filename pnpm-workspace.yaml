@@ -1,0 +1,7 @@
+packages:
+  - 'platform/**'
+  - 'rigs/**'
+  - 'libraries/**'
+  - 'packages/**'
+  - 'tests/**'
+  - '**'

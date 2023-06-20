@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  Lint:
+    uses: ./.github/workflows/call-lint.yml
+    secrets:
+      IMPACTED_BY_SHA: ${{ github.event.before }}
+
+  Build:
+    uses: ./.github/workflows/call-build.yml
+    secrets:
+      IMPACTED_BY_SHA: ${{ github.event.before }}
+
+  Test:
+    uses: ./.github/workflows/call-test.yml
+    secrets:
+      IMPACTED_BY_SHA: ${{ github.event.before }}
+

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "rushVersion": "5.100.1",
+  "pnpmVersion": "8.6.2",
+  "nodeSupportedVersionRange": ">=16.18.0",
+  "ensureConsistentVersions": true,
+  "projectFolderMinDepth": 2,
+  "projectFolderMaxDepth": 3,
+  "approvedPackagesPolicy": {
+    "reviewCategories": [
+      "apis",
+      "api-client",
+      "clients",
+      "libraries",
+      "rigs",
+      "category-platform",
+      "category-ci-cd"
+    ],
+    "ignoredNpmScopes": ["@types"]
+  },
+  "repository": {
+    "url": "https://github.com/aerisapp/tech-challenge",
+    "defaultBranch": "main",
+    "defaultRemote": "origin"
+  },
+  "eventHooks": {
+    "preRushInstall": [],
+    "postRushInstall": [],
+    "preRushBuild": [],
+    "postRushBuild": []
+  },
+  "allowedProjectTags": [
+    "category-platform",
+    "category-library",
+    "category-ci-cd",
+    "owner-ux",
+    "deploy-tools",
+    "deploy-platform",
+    "deploy-app"
+  ],
+  "projects": [
+    {
+      "packageName": "@aerisapp/design-system",
+      "projectFolder": "services/design-system",
+      "reviewCategory": "apis",
+      "decoupledLocalDependencies": [],
+      "tags": ["category-library", "owner-ux"],
+      "shouldPublish": true
+    },
+    {
+      "packageName": "@aerisapp/admin-client",
+      "projectFolder": "services/admin-client",
+      "reviewCategory": "apis",
+      "decoupledLocalDependencies": [],
+      "tags": []
+    }
+  ]
+}

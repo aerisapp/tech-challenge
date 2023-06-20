@@ -1,0 +1,51 @@
+# rush deploy
+common/deploy/**
+common/deploy-ci/**
+!common/deploy-ci/.gitkeep
+dist/**
+!dist/README.md
+
+# next.js build output
+.next
+
+# coverage
+clover.xml
+**/coverage/**
+
+# Docker
+docker-compose.override.yml
+
+# ssh
+.devcontainer/.ssh/**
+!.devcontainer/.ssh/config
+
+# AWS CLI
+.devcontainer/.aws/**
+!.devcontainer/.aws/config
+
+# AWS CDK
+**/cdk.out/*
+
+# Packages
+node_modules/*
+**/node_modules/*
+
+# Logs
+*.log
+
+.pnpm-store/
+common/temp/
+**/.rush/temp/
+
+**/docs/.nojekyll
+**/docs/*.html
+
+.env
+!.env.dist
+
+# Dist
+**/dist/**
+**/.cache/**
+**/build/**
+
+.DS_Store

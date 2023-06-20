@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  tech-challenge:
+    build:
+        context: .
+        dockerfile: Dockerfile
+        target: development
+    container_name: tech-challenge
+    tty: true
+    stdin_open: true
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+        - .:/usr/src/app
+        - .devcontainer/.aws:/home/node/.aws
+        - github-ssh-key:/home/node/github-ssh-key
+
+volumes:
+   github-ssh-key:

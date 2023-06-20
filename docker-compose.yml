@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+    tech-challenge:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            target: test
+        container_name: tech-challenge
+        tty: true
+        stdin_open: true
