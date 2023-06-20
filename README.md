@@ -15,9 +15,33 @@ This is a NextJS app that uses the UI components.
 
 For a turn-key development environment,
 [fork the repo](https://github.com/aerisapp/tech-challenge/fork) and open in
-Github Codespaces.
+Github Codespaces with at least **4 Cores**.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=438855397)
+[![Open in GitHub Codespaces](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=656233196&skip_quickstart=true&machine=standardLinux32gb&devcontainer_path=.devcontainer%2Fdevcontainer.json&geo=UsEast)
+
+From Github to open a new CodeSpace when signed in and viewing this repo, select
+the "Code" > Codespaces > +.
+
+![Codespace](docs/codespaces.png)
+
+To develop for the AdminClient app using the CodeSpace, go to the admin client
+package build dependencies and run in dev mode:
+
+```bash
+cd /usr/app/services/admin-client
+rushx build:all && rushx dev
+```
+
+This will build required packages and start the NextJs app in dev mode. Click
+"Open in Browser" in the bottom right to view the web app.
+
+![Codespace](docs/codespace-open-in-browser.png)
+
+That will show bring up the AdminClient in a new window.
+
+![Codespace](docs/admin-client-app.png)
+
+---
 
 Alternatively, build, test, and deploy apps locally using the
 [devcontainer](docs/devcontainer.md).
